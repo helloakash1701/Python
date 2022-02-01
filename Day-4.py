@@ -59,64 +59,64 @@
 
 
 
-import random
+                # import random
 
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
+                # rock = '''
+                #     _______
+                # ---'   ____)
+                #       (_____)
+                #       (_____)
+                #       (____)
+                # ---.__(___)
+                # '''
 
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
+                # paper = '''
+                #     _______
+                # ---'   ____)____
+                #           ______)
+                #           _______)
+                #          _______)
+                # ---.__________)
+                # '''
 
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-opt = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
-comp_opt = random.randint(0,2)
-print(f"Your input {opt}")
-# User input
-if opt == 0 :
-    print(rock)
-elif opt == 1:
-    print(paper)
-elif opt == 2:
-    print(scissors)
+                # scissors = '''
+                #     _______
+                # ---'   ____)____
+                #           ______)
+                #        __________)
+                #       (____)
+                # ---.__(___)
+                # '''
+                # opt = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
+                # comp_opt = random.randint(0,2)
+                # print(f"Your input {opt}")
+                # # User input
+                # if opt == 0 :
+                #     print(rock)
+                # elif opt == 1:
+                #     print(paper)
+                # elif opt == 2:
+                #     print(scissors)
 
-# Computer input
-print(f"Computer input is {comp_opt}")
-if comp_opt == 0 :
-    print(rock)
-elif comp_opt == 1:
-    print(paper)
-elif comp_opt == 2:
-    print(scissors)
+                # # Computer input
+                # print(f"Computer input is {comp_opt}")
+                # if comp_opt == 0 :
+                #     print(rock)
+                # elif comp_opt == 1:
+                #     print(paper)
+                # elif comp_opt == 2:
+                #     print(scissors)
 
-if comp_opt == opt :
-    print("No Damage ")
-if opt == 0 and comp_opt <3 and comp_opt!= 1 :
-    print(f"Winner rock {rock}")
-elif opt == 1 and comp_opt == 0 or opt ==0 and comp_opt ==1:
-    print(f"Winner Paper {paper}")
-elif opt == 2 and comp_opt == 0 :
-    print(f"Winner rock {rock}")
-elif opt == 1 and comp_opt == 2 or opt == 2 and comp_opt == 1:
-    print(f"Winner scissors {scissors}")
+                # if comp_opt == opt :
+                #     print("No Damage ")
+                # if opt == 0 and comp_opt <3 and comp_opt!= 1 :
+                #     print(f"Winner rock {rock}")
+                # elif opt == 1 and comp_opt == 0 or opt ==0 and comp_opt ==1:
+                #     print(f"Winner Paper {paper}")
+                # elif opt == 2 and comp_opt == 0 :
+                #     print(f"Winner rock {rock}")
+                # elif opt == 1 and comp_opt == 2 or opt == 2 and comp_opt == 1:
+                #     print(f"Winner scissors {scissors}")
 
 
 
